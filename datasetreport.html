@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="datacenter">
+    <head>
+      <meta charset="utf-8">
+      <title>Part Two: Sales Data</title>
+      <meta name="description" content="Data Center for Sales.">
+      <meta name="author" content="Cecilia Tran">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!--stylesheets-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/data.css">
+
+      <!--javascript-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="https://use.fontawesome.com/7ef29430c8.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  </head>
+
+    <body>
+        <section id="container">
+            <!-- *************************************
+              HEAD BAR
+              includes logout -> resume.html
+            ******************************************-->
+            <!--header start-->
+            <header class="header white">
+                <div class="nav-bar" id="top_bar">
+                    <ul class="nav navbar-nav">
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="username">Welcome,  <b>US Director of Sales</b></li>
+                        <li class="logout pull-right"><a href="resume.html"></span>LOG OUT</a></li>
+                    </ul>
+                </div>
+            </header>
+            <!--header end-->
+
+            <!-- *****************************************************
+              MAIN SIDEBAR MENU
+              Nav: dashboard -> datasetreport.html ,people -> people.html, calendar
+            ********************************************************-->
+            <!--sidebar start-->
+            <div id="sideNav">
+                <!-- sidebar menu start-->
+
+                <h4>DASHBOARD</h4>
+                <a href="#" class="navToggleBtn"><i class="fa fa-bars" style="color: #F2F2F2; font-size: 20px; margin-left:15px; margin-top:15px;"></i></a>
+                <ul class="link-main">
+                    <li class="activelink">
+                        <a href="datasetreport.html">
+                            <i class="fa fa-home" style="color: #F2F2F2; font-size: 12px;"></i> &nbsp;<span>HOME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="people.html">
+                            <i class="fa fa-user-circle" style="color: #F2F2F2; font-size: 12px;"></i> &nbsp;<span>PEOPLE</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!--Calendar-->
+                <div id="calendar" class="calendar-panel">
+                      <div class="month">
+                        <ul>
+                            <li class="btn prev">&#10094;</li>
+                            <li class="btn next">&#10095;</li>
+                            <li>
+                                April<br>
+                                <span style="font-size:12px">2017</span>
+                            </li>
+                        </ul>
+                      </div>
+                      <ul class="weekdays">
+                          <li>Mo</li>
+                          <li>Tu</li>
+                          <li>We</li>
+                          <li>Th</li>
+                          <li>Fr</li>
+                          <li>Sa</li>
+                          <li>Su</li>
+                      </ul>
+
+                      <ul class="days">
+                          <li>1</li>
+                          <li>2</li>
+                          <li>3</li>
+                          <li>4</li>
+                          <li>5</li>
+                          <li>6</li>
+                          <li>7</li>
+                          <li>8</li>
+                          <li>9</li>
+                          <li>10</li>
+                          <li>11</li>
+                          <li>12</li>
+                          <li>13</li>
+                          <li>14</li>
+                          <li>15</li>
+                          <li>16</li>
+                          <li>17</li>
+                          <li>18</li>
+                          <li>19</li>
+                          <li>20</li>
+                          <li>21</li>
+                          <li>22</li>
+                          <li>23</li>
+                          <li>24</li>
+                          <li>25</li>
+                          <li>26</li>
+                          <li>27</li>
+                          <li><span class="active">28</span></li>
+                          <li>29</li>
+                          <li>30</li>
+                      </ul>
+                </div>
+                <!-- end of calendar -->
+            </div>
+            <!--sidebar end-->
+
+            <!-- ******************************************
+                          MAIN CONTENT
+                          includes the graphs
+            ******************************************** -->
+            <!--main content start-->
+            <section id="main-content">
+                  <div class="tables-panel col-md-10 col-sm-10 col-xs-12">
+                      <!--Total Sales panel-->
+                        <div class="panel1 col-md-4 col-sm-12 col-xs-12">
+                            <h2 class="col-md-12 col-sm-12 col-xs-12"><b>Total Sales: </b></h2>
+                            <div class="col-md-12 col-sm-12 col-xs-12 custom-line"></div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <p class="year"><b>YTD</b>&nbsp;&nbsp;<span class="caret"></span></a></p>
+                                <h2>$<span id="total-year"></span></h2>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <p class="quarter"><b>QTD</b>&nbsp;&nbsp;<span class="caret"></span></a></p>
+                                <h2>$<span id="total-quarter"></span></h2>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <p class="expected"><b>Amount Expected</b>&nbsp;&nbsp;<span class="caret"></span></a></p>
+                                <h2>$300000</h2>
+                                <div class="meter">
+                                    <span class="meter-span" style="width: 95%"></span>
+                                    <span class="percentage"><b>95%</b></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End of Total Sales panel-->
+
+    <!-- *******************************************************************************-->
+    <!-- ***************************** GRAPH SECTION ***********************************-->
+    <!-- *******************************************************************************-->
+                        <!--3 main general graphs -->
+                        <div class="graph1 col-md-6 col-sm-12">
+                            <div id="table-title">
+                              <h4>Total Sales Per Quarter</h4>
+                            </div><br>
+                            <canvas id="myChart" width="100" height="65"></canvas>
+                        </div>
+
+                        <div class="graph2 col-md-6 col-sm-12">
+                            <div id="table-title">
+                              <h4>Total Sales Per Manager</h4>
+                            </div><br>
+                            <canvas id="myChart2" width="100" height="75"></canvas>
+                        </div>
+
+                        <div class="graph3 col-md-6 col-sm-12">
+                            <div id="table-title">
+                              <h4>Total Sales Per Region</h4>
+                            </div><br>
+                            <canvas id="myChart3" width="100" height="75"></canvas>
+                        </div>
+
+                        <!--Extra Details Graphs-->
+                        <div class="graph4 col-md-6 col-sm-12">
+                            <div id="table-title">
+                              <h4>2014 Sales Detailed by Region</h4>
+                            </div><br>
+                            <canvas id="myChart4" width="80" height="70"></canvas>
+                        </div>
+
+                        <div class="graph5 col-md-6 col-sm-12">
+                            <div id="table-title">
+                              <h4>2013 Sales Detailed by Region</h4>
+                            </div><br>
+                            <canvas id="myChart5" width="80" height="70"></canvas>
+                        </div>
+
+                        <div class="graph6 col-md-12 col-sm-6">
+                            <div id="table-title"><h4>Manager Sales Detailed by Year</h4>
+                                <div class="form-select2">
+                                  <select id="yearSelect">
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                  </select>
+                                </div>
+                            </div>
+                            <canvas id="myChart6" width="100" height="40"></canvas>
+                        </div>
+
+
+                        <!-- printable table of the data -->
+                        <div class="panel2 col-md-12 col-sm-12">
+                            <div class="table-header col-md-2 col-sm-12">
+                                <h3>Full Data Set</h3><hr>
+                                <button class="btn print-button">Print Full Data</button>
+                            </div>
+                            <div class="data-table col-md-8 col-sm-12" id="data-table">
+                                <table class="col-md-12 sortable" id="fullDataSetTable">
+                                  <thead>
+                                      <tr>
+                                          <th>Year</th>
+                                          <th>Quarter</th>
+                                          <th>Region</th>
+                                          <th>Regional Manager</th>
+                                          <th>Sales</th>
+                                      </tr>
+                                  </thead>
+                                </table>
+                            </div>
+                        </div>
+                        <!--End of Printable Table-->
+                  </div>
+                  <!-- end of graph-panels -->
+            </section>
+
+    </body>
+    <script src="js/sorttable.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/graph.js"></script>
+</html>
