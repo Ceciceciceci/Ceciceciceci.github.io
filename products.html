@@ -46,7 +46,7 @@
 				      <div class="row">
 				        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
 				          <div class="img-wrapper">
-				            <a href="img/thumbs/3.png"><img src="img/original/3.png" class="img-responsive"></a>
+				            <a href="img/original/3.png"><img src="img/original/3.png" class="img-responsive"></a>
 				            <div class="img-overlay">
 				              <i class="fa fa-plus-circle" aria-hidden="true"></i>
 				            </div>
@@ -151,13 +151,15 @@ $( ".img-wrapper" ).hover(
 
 // Lightbox
 var $overlay = $('<div id="overlay"></div>');
+var $imagediv = $('<div id="image-container" style="display: block; padding:50px; position:absolute; top:0px; z-index:1000;"></div>')
 var $image = $("<img>");
 var $prevButton = $('<div id="prevButton"><i class="fa fa-chevron-left"></i></div>');
 var $nextButton = $('<div id="nextButton"><i class="fa fa-chevron-right"></i></div>');
 var $exitButton = $('<div id="exitButton"><i class="fa fa-times"></i></div>');
 
 // Add overlay
-$overlay.append($image).prepend($prevButton).append($nextButton).append($exitButton);
+$imagediv.append($image);
+$overlay.append($imagediv).prepend($prevButton).append($nextButton).append($exitButton);
 $("#gallery").append($overlay);
 
 // Hide overlay on default
@@ -170,6 +172,7 @@ $(".img-overlay").click(function(event) {
   // Adds href attribute to variable
   var imageLocation = $(this).prev().attr("href");
   // Add the image src to $image
+	$image.attr("id", "select");
   $image.attr("src", imageLocation);
   // Fade in the overlay
   $overlay.fadeIn("slow");
