@@ -58,21 +58,18 @@ button:focus {
 	text-align: center;
 }
 
-.codrops-header h1 {
-	margin: 0.5em 0 0;
-	letter-spacing: 1em;
-	font-size: 25px;
-	line-height: 1;
-	font-weight: normal;
+.codrops-header p {
+  padding-top:15px;
+	padding-bottom:15px;
 }
 
 .codrops-header h1 span {
-	display: block;
-	padding: 0.5em 0 1em;
+	display: inline;
+	padding-right:15px;
 	color: #999;
 	font-weight: normal;
-	font-size: 0.45em;
-	letter-spacing: 0;
+	font-size: 0.8em;
+	/* letter-spacing: 15px; */
 }
 
 
@@ -223,10 +220,11 @@ body #cdawrap .carbon-text {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  i {
-    color: #fff;
-    font-size: 3em;
-  }
+}
+
+.img-overlay i {
+	color: #fff;
+	font-size: 3em;
 }
 
 #overlay {
@@ -261,44 +259,41 @@ img#select {
 }
 
 #nextButton {
-  color: #fff;
+  color: #f18141;
   font-size: 2em;
   transition: opacity 0.8s;
 	position: absolute;
 	right:25px;
-  &:hover {
-    opacity: 0.7;
-  }
-  @media screen and (min-width:768px) {
-    font-size: 3em;
-  }
 }
 
 #prevButton {
-  color: #fff;
+  color: #f18141;
   font-size: 2em;
   transition: opacity 0.8s;
 	position:absolute;
 	left:25px;
-  &:hover {
-    opacity: 0.7;
-  }
-  @media screen and (min-width:768px) {
-    font-size: 3em;
-  }
 }
 
 #exitButton {
-  color: #fff;
+  color: #f18141;
   font-size: 2em;
   transition: opacity 0.8s;
   position: absolute;
   top: 15px;
   right: 15px;
-  &:hover {
-    opacity: 0.7;
-  }
-  @media screen and (min-width:768px) {
-    font-size: 3em;
-  }
+}
+#exitButton:hover, #prevButton:hover, #nextButton:hover {
+	color:#ffd72f;
+}
+
+@media screen and (min-width:768px) {
+	#nextButton {
+		font-size: 3em;
+	}
+	#prevButton {
+		font-size: 3em;
+	}
+	#exitButton {
+		font-size: 3em;
+	}
 }
