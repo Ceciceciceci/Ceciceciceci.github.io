@@ -15,6 +15,14 @@ $(document).ready(function() {
           $('#nav_bar').removeClass('fixed-navbar');
       }
   });
+  $(window).scroll(function(){
+      $('.fading-in').each(function(){
+          var bottom_of_obj= $(this).offset().top - $(window).scrollTop();
+          if (bottom_of_obj < 700){
+             $(this).css("opacity", 1);
+          }
+      });
+  });
 });
 
 

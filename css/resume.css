@@ -183,7 +183,7 @@ section h3{
 
 /*Experience*/
 .section3{
-    height: 650px;
+    height: 1420px;
     background-color: #FDF8E2;
 }
 
@@ -217,7 +217,7 @@ section h3{
         height: 1200px;
     }
     .section3{
-        height: 1000px;
+        height: 1600px;
     }
     .section4{
         height: 1000px;
@@ -238,7 +238,7 @@ section h3{
           height: 1200px;
     }
     .section3{
-      height: 900px;
+      height: 1800px;
     }
     .section4{
         height: 900px;
@@ -254,7 +254,7 @@ section h3{
 
 @media screen and (min-width: 775px) and (max-width: 1000px) {
     .section3{
-      height: 900px;
+      height: 2000px;
     }
 
     .section4{
@@ -420,16 +420,16 @@ section h3{
 }
 
 .fading-in{
-    opacity: 1;
-    transform: translateX(0px);
+    opacity: 0;
+    transition: all 300ms ease-in-out;
 }
 
-.sj-panel{
+.job-panel{
     margin-bottom: 20px;
     padding: 10px;
 }
 
-.sj-panel:hover{
+.sj-panel:hover, .cisco-panel:hover{
     -webkit-animation-name: hoverscale;
     animation-name: hoverscale;
     animation-duration: 0.5s;
@@ -437,25 +437,10 @@ section h3{
     animation-fill-mode: forwards;
 }
 
-.sj-panel b{
+.sj-panel b, .cisco-panel b{
     font-size: 20px;
 }
 
-.cisco-panel{
-    padding: 10px;
-}
-
-.cisco-panel:hover{
-    -webkit-animation-name: hoverscale;
-    animation-name: hoverscale;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-.cisco-panel b{
-    font-size: 20px;
-}
 
 /* Responsive bit for other items in section 3 */
 @media screen and (min-width: 440px) and (max-width: 770px) {
