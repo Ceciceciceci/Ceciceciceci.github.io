@@ -178,9 +178,9 @@ section h3{
 .section1{
     height: 700px;
     background-image: url('../images/DSC02837.JPG');
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
-    height:100vh;
+    /* height:100vh; */
     overflow:hidden;
 }
 
