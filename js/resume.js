@@ -69,23 +69,6 @@ $(window).scroll(function () {
     }
 });
 
-//Smooth scrolling to the hash item /#id
-// $(document).ready(function(){
-    // Add smooth scrolling to all links
-    // $("a").on('click', function(event) {
-    //     if (this.hash !== "") {
-    //         event.preventDefault();
-    //         var hash = this.hash;
-    //         $('html, body').animate({
-    //             scrollTop: $(hash).offset().top - 40
-    //         }, 1000, function(){
-    //           window.location.hash = hash; // Add hash id to URL after scroll
-    //         });
-    //     }
-    // });
-    //
-// });
-
 //function to click and change the active highlight to another nav element navigation
 function changeActiveNav(event){
     var scrollY = $(document).scrollTop();
