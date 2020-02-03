@@ -219,7 +219,7 @@ section h3{
 
 /*Changing height of each section*/
 /*FOR SMALLER OR MOBILE VIEW*/
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 460px) {
     .section1{
         height: 800px;
     }
@@ -239,7 +239,7 @@ section h3{
         height: 525px;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 460px) {
     .section1{
         height: 800px;
     }
@@ -260,7 +260,7 @@ section h3{
     }
 }
 
-@media screen and (min-width: 440px) and (max-width: 775px) {
+@media screen and (min-width: 460px) and (max-width: 775px) {
     .section1{
        height: 700px;
     }
