@@ -19,12 +19,19 @@ $(document).ready(function() {
       $('.job-panel').each(function(){
           var bottom_of_obj= $(this).offset().top - $(window).scrollTop();
           console.log(bottom_of_obj);
-          if (bottom_of_obj < 500){
+          if (bottom_of_obj < 800){
              $(this).css("opacity", 1);
           }
       });
   });
   $("body").find(".nav_links li a").click(function(e) {
+      e.preventDefault();
+      var section = $(this).attr("href");
+      $("html, body").animate({
+          scrollTop: $(section).offset().top - 50
+      });
+  });
+  $("body").find(".title-panel a").click(function(e) {
       e.preventDefault();
       var section = $(this).attr("href");
       $("html, body").animate({
