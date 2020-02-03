@@ -127,7 +127,7 @@ header .logout a:hover{
     border-radius: 2px;
     margin-left: 65px;
     margin-right: 65px;
-    padding: 0px 100px 0px 0px;
+    /* padding: 0px 100px 0px 0px; */
 }
 
 .link-main li:hover{
