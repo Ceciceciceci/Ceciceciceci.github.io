@@ -31,6 +31,14 @@ $(document).ready(function() {
           scrollTop: $(section).offset().top - 50
       });
   });
+  // //change the active tag to the clicked nav item
+  $(document).on('scroll', changeActiveNav);
+  $('a[href^="#"]').on('click', function () {
+      $('a').each(function () {
+          $(this).removeClass('active');
+      })
+      $(this).addClass('active');
+  });
 });
 
 
@@ -55,7 +63,7 @@ $(window).scroll(function () {
 });
 
 //Smooth scrolling to the hash item /#id
-$(document).ready(function(){
+// $(document).ready(function(){
     // Add smooth scrolling to all links
     // $("a").on('click', function(event) {
     //     if (this.hash !== "") {
@@ -69,27 +77,19 @@ $(document).ready(function(){
     //     }
     // });
     //
-    // //change the active tag to the clicked nav item
-    // $(document).on('scroll', changeActiveNav);
-    // $('a[href^="#"]').on('click', function () {
-    //     $('a').each(function () {
-    //         $(this).removeClass('active');
-    //     })
-    //     $(this).addClass('active');
-    // });
-});
+// });
 
 //function to click and change the active highlight to another nav element navigation
 function changeActiveNav(event){
     var scrollY = $(document).scrollTop();
-    $('#nav-bar li a').each(function(){
+    $('#nav-bar ul li a').each(function(){
         var currHash = $(this);
         console.log('currHash' + currHash);
         var refElement = $(currHash.attr("href"));
         console.log('refElement' + refElement);
         if (refElement.position().top <= scrollY && refElement.position().top +
             refElement.height() > scrollY){
-              $('#nav-bar li a').removeClass("active");
+              $('#nav-bar ul li a').removeClass("active");
               currHash.addClass("active");
         }
         else{
@@ -97,6 +97,8 @@ function changeActiveNav(event){
         }
     });
 }
+
+$
 
 /*******************FOR PROJECTS*******************/
 //for the tabs; bootstrap plug-in

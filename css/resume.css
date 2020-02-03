@@ -10,10 +10,10 @@ html {
 
 body {
     margin: 0;
-    background-image: url('title.jpg');
+    background-image: url('../images/DSC02837.JPG');
     background-attachment: fixed;
     background-size: cover;
-    background-position: top center;
+    /* background-position: top center; */
     background-repeat: no-repeat;
 }
 
@@ -87,7 +87,7 @@ section h3{
 }
 
 .nav_links .active {
-    color: #7CC473;
+    color: #4a99c2;
     text-decoration: none;
 }
 
@@ -112,7 +112,7 @@ section h3{
 }
 
 .nav_links li a:hover {
-    color: #7CC473;
+    color: #4a99c2;
 }
 
 .handle{
@@ -183,8 +183,8 @@ section h3{
 
 /*Experience*/
 .section3{
-    height: 1420px;
-    background-color: #FDF8E2;
+    height: 1550px;
+    background-color: #c2d3da;
 }
 
 /*Skill*/
@@ -204,17 +204,17 @@ section h3{
 /*Contact*/
 .section6{
     height: 500px;
-    background-color: #2E2E2E;
+    background-color: #0f1f30;
 }
 
 /*Changing height of each section*/
 /*FOR SMALLER OR MOBILE VIEW*/
 @media screen and (max-width: 440px) {
     .section1{
-        height: 700px;
+        height: 800px;
     }
-    .section2{
-        height: 1200px;
+    .section1 h1{
+        word-wrap: break-word;
     }
     .section3{
         height: 1600px;
@@ -275,6 +275,7 @@ section h3{
     font-size: 75px;
     color: #FFFFFF;
     text-align: center;
+    letter-spacing: 5px;
 }
 
 .title-line {
@@ -289,7 +290,7 @@ section h3{
 
 .section1 p{
     text-align: center;
-    color: #FFFFFF;
+    color: #051220;
     padding-top: 15px;
     margin-bottom: 25%;
 }
@@ -363,7 +364,7 @@ section h3{
 /************* ABOUT **************/
 /**********************************/
 .section h3{
-    color: #7CC473;
+    color: #4a99c2;
     font-size: 50px;
     padding: 0px 0px 0px 0px;
     text-align: center;
@@ -383,7 +384,7 @@ section h3{
 
 .image-me .about-panel h3{
     font-size: 50px;
-    color: #7CC473;
+    color: #4a99c2;
     font-family: 'Open Sans Condensed', sans-serif;
     padding-top:0;
 }
@@ -396,7 +397,8 @@ section h3{
 .education-panel{
     margin-left: 75px;
     padding: 50px;
-    background: #9ECE99;
+    color: #000;
+    background-color: #79a8b5;
 }
 
 /**********************************/
@@ -404,12 +406,11 @@ section h3{
 /**********************************/
 .section3 h3{
     font-family: 'Open Sans Condensed', sans-serif;
-    color: #7CC473;
+    color: #0f1f31;
     font-size: 50px;
     padding: 20px 0px;
     text-align: center;
 }
-
 .work-panel{
     margin-bottom: 50px;
     left: 10%;
@@ -417,6 +418,7 @@ section h3{
     opacity: 0;
     transform: translateX(-20px);
     transition: all 0.3s ease-in-out;
+    color: #0f1f31
 }
 
 .fading-in{
@@ -468,15 +470,14 @@ section h3{
     content:'';
     position:absolute;
     left:55%; top:200px;
-    border-radius:50%;
     height:150px;
-    width:250px;
+    width:350px;
     box-shadow: 0px 0px 0px 2000px #FFFFFF;
 }
 
 .section4 .skill{
     font-family: 'Open Sans Condensed', sans-serif;
-    color: #7CC473;
+    color: #4a99c2;
     font-size: 50px;
     padding: 20px 0px;
     text-align: center;
@@ -509,7 +510,7 @@ section h3{
     position: absolute;
     margin-top: 35px;
     z-index: 4;
-    background-color: #FFD37E;
+    background-color: #d9dc9b;
     opacity: 0.3;
     padding: 50px;
     height: 400px;
@@ -520,7 +521,7 @@ section h3{
     position: absolute;
     margin-top: 250px;
     z-index: 4;
-    background-color: #9ECE99;
+    background-color: #4a99c2;
     opacity: 0.4;
     padding: 50px;
     height: 400px;
@@ -541,7 +542,7 @@ section h3{
 
 .lang-panel-text p{
     font-size: 25px;
-    color: #FFD37E;
+    color: #aaab97;
 }
 
 .tool-panel-text{
@@ -556,7 +557,7 @@ section h3{
 
 .tool-panel-text p{
     font-size: 25px;
-    color: #9ECE99;
+    color: #0e4082;
 }
 
 /* Responsive bit for other items in section 5 */
@@ -575,7 +576,6 @@ section h3{
     .tool-panel{
         position: absolute;
         z-index: 4;
-        background-color: #9ECE99;
         opacity: 0.4;
         padding: 50px;
         height: 350px;
@@ -623,7 +623,7 @@ section h3{
 /**********************************/
 .section5 h3{
     font-family: 'Open Sans Condensed', sans-serif;
-    color: #7CC473;
+    color: #4a99c2;
     font-size: 50px;
     padding: 20px 0px;
     text-align: center;
@@ -640,12 +640,12 @@ section h3{
 }
 
 .section5 .nav li a:hover{
-    color: #7CC473;
+    color: #4a99c2;
 
 }
 
 .section5 .projheader{
-    color: #7CC473;
+    color:#aaab97;
     font-size: 25px;
     text-align: left;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -676,7 +676,7 @@ section h3{
 }
 
 .myButton {
-    background-color:#7CC473;
+    background-color:#4a99c2;
     -moz-border-radius:42px;
     -webkit-border-radius:42px;
     border-radius:42px;
