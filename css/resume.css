@@ -247,6 +247,7 @@ section h3{
     .section5{
       height: 1400px;
     }
+    .section5 h3{ padding:0px 0px !important; }
     .section6{
       height: 500px;
     }
@@ -565,7 +566,7 @@ section h3{
     .lang-panel{
         position: absolute;
         z-index: 4;
-        background-color: #FFD37E;
+        background-color: #cbce91;
         opacity: 0.3;
         padding: 50px;
         height: 350px;
@@ -616,6 +617,7 @@ section h3{
         height:0px;
         width:0px;
     }
+
 }
 
 /**********************************/
@@ -689,7 +691,7 @@ section h3{
     font-family: 'Open Sans Condensed', sans-serif;
 }
 .myButton:hover {
-    background-color:#a5cc52;
+    background-color:#81764d;
     text-decoration: none;
     color:#FFFFFF;
 }
