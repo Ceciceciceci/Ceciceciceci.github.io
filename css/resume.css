@@ -11,9 +11,9 @@ html {
 
 body {
     margin: 0;
-    background-image: url('../images/DSC02837.JPG');
-    background-attachment: fixed;
-    background-size: cover;
+    /* background-image: url('../images/DSC02837.JPG'); */
+    /* background-attachment: fixed;
+    background-size: cover; */
     /* background-position: top center; */
     background-repeat: no-repeat;
       overflow-x: hidden;
@@ -198,6 +198,7 @@ section h3{
 
 /*Skill*/
 .section4{
+  background-image: url('../images/DSC02837.JPG');
     height: 900px;
     position:relative;
     margin:0 auto;
