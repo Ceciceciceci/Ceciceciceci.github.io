@@ -16,11 +16,19 @@ $(document).ready(function() {
       }
   });
   $(window).scroll(function(){
-      $('.fading-in').each(function(){
+      $('.job-panel').each(function(){
           var bottom_of_obj= $(this).offset().top - $(window).scrollTop();
-          if (bottom_of_obj < 700){
+          console.log(bottom_of_obj);
+          if (bottom_of_obj < 500){
              $(this).css("opacity", 1);
           }
+      });
+  });
+  $("body").find(".nav_links li a").click(function(e) {
+      e.preventDefault();
+      var section = $(this).attr("href");
+      $("html, body").animate({
+          scrollTop: $(section).offset().top - 50
       });
   });
 });
@@ -49,39 +57,39 @@ $(window).scroll(function () {
 //Smooth scrolling to the hash item /#id
 $(document).ready(function(){
     // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top - 40
-            }, 1000, function(){
-              window.location.hash = hash; // Add hash id to URL after scroll
-            });
-        }
-    });
-
-    //change the active tag to the clicked nav item
-    $(document).on('scroll', changeActiveNav);
-    $('a[href^="#"]').on('click', function () {
-        $('a').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).addClass('active');
-    });
+    // $("a").on('click', function(event) {
+    //     if (this.hash !== "") {
+    //         event.preventDefault();
+    //         var hash = this.hash;
+    //         $('html, body').animate({
+    //             scrollTop: $(hash).offset().top - 40
+    //         }, 1000, function(){
+    //           window.location.hash = hash; // Add hash id to URL after scroll
+    //         });
+    //     }
+    // });
+    //
+    // //change the active tag to the clicked nav item
+    // $(document).on('scroll', changeActiveNav);
+    // $('a[href^="#"]').on('click', function () {
+    //     $('a').each(function () {
+    //         $(this).removeClass('active');
+    //     })
+    //     $(this).addClass('active');
+    // });
 });
 
 //function to click and change the active highlight to another nav element navigation
 function changeActiveNav(event){
     var scrollY = $(document).scrollTop();
-    $('#nav-bar ul li a').each(function(){
+    $('#nav-bar li a').each(function(){
         var currHash = $(this);
         console.log('currHash' + currHash);
         var refElement = $(currHash.attr("href"));
         console.log('refElement' + refElement);
         if (refElement.position().top <= scrollY && refElement.position().top +
             refElement.height() > scrollY){
-              $('#nav-bar ul li a').removeClass("active");
+              $('#nav-bar li a').removeClass("active");
               currHash.addClass("active");
         }
         else{
