@@ -46,17 +46,17 @@ $(document).ready(function() {
       })
       $(this).addClass('active');
   });
+  if( $('.handle').css('display') === ('block')) {
+      $('.handle').on('click',function () {
+          console.log("clicking!!!");
+          $('.nav_links').toggleClass('show');
+      });
+  }
 });
 
 
 //Pop out navbar
 $(document).ready(function() {
-      if( $('.handle').css('display') == ('block')) {
-          $('.handle').on('click',function () {
-              console.log("clicking!!!");
-              $('.nav_links').toggleClass('show');
-          });
-      }
 });
 
 //fade in some section 3's work panel
