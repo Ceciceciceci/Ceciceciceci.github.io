@@ -75,6 +75,7 @@ section h3{
 }
 
 .nav_links {
+    margin-top:15px;
     margin: 0 auto;
     font-family: 'Open Sans Condensed', sans-serif;
     display:block;
