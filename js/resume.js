@@ -55,10 +55,6 @@ $(document).ready(function() {
 });
 
 
-//Pop out navbar
-$(document).ready(function() {
-});
-
 //fade in some section 3's work panel
 $(window).scroll(function () {
     var pageScroll = $(this).scrollTop();
