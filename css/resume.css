@@ -527,10 +527,8 @@ nav{ padding-top: 5px;
 
 .fa {
     color: #FFFFFF;
-    padding: 20px 35px;
+    padding: 0px 15px 20px 0px;
     text-align: center;
-    height:50px;
-    width: 50px;
     opacity: 0.8;
 }
 .icon-panel{
@@ -538,6 +536,8 @@ nav{ padding-top: 5px;
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-direction: column;
+    
 }
 .icon-panel a{
     color: #FDF8E2;
