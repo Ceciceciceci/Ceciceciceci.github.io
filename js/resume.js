@@ -4,7 +4,6 @@
 //Fix Navbar to the top while scrolling
 $(document).ready(function() {
   $(window).scroll(function () {
-      var pageScroll = $(this).scrollTop();
       if ($(window).scrollTop() > 0) {
           $('#nav_bar').addClass('fixed-navbar');
           $('.handle').addClass('fixed-navbar_min');
@@ -15,29 +14,6 @@ $(document).ready(function() {
           $('#nav_bar').removeClass('fixed-navbar');
       }
   });
-  $(window).scroll(function(){
-      $('.job-panel').each(function(){
-          var bottom_of_obj= $(this).offset().top - $(window).scrollTop();
-          console.log(bottom_of_obj);
-          if (bottom_of_obj < 800){
-             $(this).css("opacity", 1);
-          }
-      });
-  });
-  $("body").find(".nav_links li a").click(function(e) {
-      e.preventDefault();
-      var section = $(this).attr("href");
-      $("html, body").animate({
-          scrollTop: $(section).offset().top - 50
-      });
-  });
-  $("body").find(".title-panel a").click(function(e) {
-      e.preventDefault();
-      var section = $(this).attr("href");
-      $("html, body").animate({
-          scrollTop: $(section).offset().top - 50
-      });
-  });
   // //change the active tag to the clicked nav item
   $(document).on('scroll', changeActiveNav);
   $('a[href^="#"]').on('click', function () {
@@ -46,23 +22,6 @@ $(document).ready(function() {
       })
       $(this).addClass('active');
   });
-  if( $('.handle').css('display') === ('block')) {
-      $('.handle').on('click',function () {
-          console.log("clicking!!!");
-          $('.nav_links').toggleClass('show');
-      });
-  }
-});
-
-
-//fade in some section 3's work panel
-$(window).scroll(function () {
-    var pageScroll = $(this).scrollTop();
-    if (pageScroll > $('.section3').offset().top-($(window).height()/2)){
-        setTimeout(function(){
-             $('.section3 .work-panel').addClass('fading-in');
-          }, 400)
-    }
 });
 
 //function to click and change the active highlight to another nav element navigation
