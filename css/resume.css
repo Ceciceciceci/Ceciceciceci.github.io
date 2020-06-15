@@ -76,6 +76,7 @@ section{
 .italic-quote{
     font-size: 10px;
     color: grey;
+    text-align: center;
 }
 
 /**********************************/
@@ -88,7 +89,6 @@ section{
     width: 100%;
 }
 nav{ padding-top: 5px;
-    /* height: 55px; */
     background-color: #ffffff;
 }
 
@@ -408,7 +408,7 @@ nav{ padding-top: 5px;
     }
     .section1{
         text-align: left !important;
-        padding-left: 25px;
+        padding-left: 15px;
     }
     .about-panel{
         width: 60%;
