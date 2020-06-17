@@ -133,8 +133,8 @@ nav{ padding-top: 5px;
 .show_links{
     height: 15rem;
     display:block;
-
 }
+
 @media screen and (min-width: 800px) {
     .handle {
        display: none;
