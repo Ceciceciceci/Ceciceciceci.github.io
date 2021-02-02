@@ -49,4 +49,36 @@ let navLinks = {
    colorTextChange();
  }, 500);
  
+
+const email = document.querySelector("email-input")
+const form = document.getElementById("myForm")
+
+let btn = document.querySelector(".submitBtn");
+
+btn.addEventListener("mouseover", function(){
+  document.querySelector(".line").classList.add("grow");
+  document.querySelector(".not-sbt").style.marginLeft = "45px";
+})
+
+btn.addEventListener("mouseout", function(){
+  document.querySelector(".line").classList.remove("grow");
+  document.querySelector(".not-sbt").style.marginLeft = "0px";
+})
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    let regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (!regexEmail.test(email.value)){
+        document.querySelector(".error").style.display = "block";
+    } else {
+        document.querySelector(".not-sbt").style.display = "none";
+        document.querySelector(".sbt").style.display = "inline-block";
+        document.querySelector(".sbt").style.opacity = 1;
+        document.querySelector(".error").style.display = "none";
+        btn.disabled = true;
+        btn.style.pointerEvents = "none";
+        document.querySelector(".line").style.display = "none";
+    }
+})
+
  

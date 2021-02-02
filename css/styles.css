@@ -319,13 +319,57 @@ textarea:focus{
 }
 
 button{
-  padding: 10px 15px;
-  margin-bottom: 25px;
-  font-size:15px;
-  color: white;
-  border: 0px;
-  border-radius: 5px;
-  background-color: var(--teal);
+    position: relative;
+    display: block;    
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    background: var(--teal);
+    font-size: 15px;
+    color: white;
+    text-transform: lowercase;
+    height: 40px;
+    width: 100%;
+    letter-spacing: 1.5px;
+    transition: all 150ms ease-in-out;
+}
+
+button:hover {
+    background-color: #008986;
+/*     letter-spacing: 3px; */
+    cursor: pointer;
+}
+
+button:active {
+   font-size: 0px;
+}
+
+.line{
+  width: 0px;
+  height: 1px;
+  display: inline-block;
+  background-color: var(--text);
+  position: absolute;
+  top: 20px;
+  left: 40%;
+  transition: width 250ms ease-in;
+}
+
+.grow { 
+    width: 50px;
+}
+
+.not-sbt{
+    display:inline-block;
+  transition: margin 250ms ease-out;
+}
+.sbt{
+    display:none;
+    opacity: 0;
+}
+
+button:focus{
+    outline: none;
 }
 
 .social-media{
@@ -350,5 +394,9 @@ button{
     list-style-type: none;
     text-align: center;
     margin-left: 0;
+  }
+
+  .line{
+    left: 30%;
   }
 }
