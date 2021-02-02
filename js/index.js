@@ -78,6 +78,8 @@ form.addEventListener("submit", function(e) {
         btn.disabled = true;
         btn.style.pointerEvents = "none";
         document.querySelector(".line").style.display = "none";
+
+        
     }
 })
 
