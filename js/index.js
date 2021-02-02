@@ -1,7 +1,8 @@
 let navLinks = {
     "about": "#about",
     "projects" : "#projects",
-    "contact" : "#contact"
+    "contact" : "#contact",
+    "art" : "https://ceciceciceci.github.io/artindex.html"
  }
  
  let nav = document.querySelector(".nav-links");
