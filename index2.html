@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ORLA GARTLAND -.</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
+    *, ul, li{
+      /* reset all css */
+      padding: 0;
+      margin: 0;
+      font-size: 62.5%;
+    }
+    body{
+      font-family: 'Poppins', 'Helvetica', sans-serif;
+      padding: 25px;
+      height: 100%;
+      width: 100%;
+      background-color: #F8DDB8;
+      overflow-x: hidden; 
+    }
+
+    .intro{
+      display: flex;
+    }
+    
+    .artist-img{
+      flex: 50%;
+      width: 100vw;
+    }
+
+    .info-card{
+      flex: 50%;
+      font-size: 5rem;
+      position: relative;
+      margin-top: 25rem;
+    }
+
+    h1{
+      font-size: 15rem;
+      position: absolute;
+      left: 1px;
+      top: 0;
+      z-index: 5;
+      line-height: 10rem;
+      color: white;
+    } 
+
+    .info-card h2{
+      margin-top: 35rem;
+      margin-left: 2rem;
+      color: #4DB8BA;
+      overflow-y: hidden;
+    }
+    
+    ul{
+      padding: 25px;
+      width: 100%;
+      position: absolute;
+      left: -25px;
+      background-color:rgba( 255, 255, 255, 0.5);
+    }
+
+    li{
+      list-style-type: none;
+    }
+
+    p{
+      margin-top: 25px;
+      border-top: 5px solid #4DB8BA;
+    }
+
+    li, p{
+      width: 50ch;
+    }
+
+    .down{
+
+    }
+
+    .songs{
+      width: 100%;
+    }
+
+    blockquote {
+      font-size: 5rem;
+      flex: 100%;
+      background: #f9f9f9;
+      border-left: 10px solid #4DB8BA;
+      margin: 1.5em 0;
+      padding: 0.5em 10px;
+      quotes: "\201C""\201D""\2018""\2019";
+    }
+    blockquote:before {
+      color:  #4DB8BA;
+      content: open-quote;
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    }
+    blockquote p {
+      display: inline;
+    }
+
+  </style>
+</head>
+<!-- Add link tag below -->
+
+<body>
+<!--
+Instructions:
+
+- Change the title tag to be about your favorite musician
+
+- Change the src of the img tag on line 9 to display as your favorite musician photo. Make sure you put this image in your images folder.
+
+- Alter the <li></li>(list items) in the <ol> on lines 10 - 15 to be information about your favorite musician.
+
+- Create a <ul> or <ol> with some quotes by your favorite musician
+
+- If you have time add more photos of your favorite musician. Make sure you uncomment the <h2> tag on line 26.
+
+-->
+<section class="intro">
+  <img class="artist-img" src="https://m.media-amazon.com/images/I/81GiRCtiJFL._SS500_.jpg" />
+
+  <h1>Orla Gartland</h1> <!-- Notice how lists can contain other html elements like the <h1> tag. Our list now has a title! -->
+  <div class="info-card">
+    <ul>
+      <li>Borned Feb 3, 1995 (25 years old)</li>
+      <li>Dublin, Ireland</li>
+      <li>Solo</li>
+      <p>
+        An Irish singer-songwriter and guitarist from Dublin who gained popularity from posting cover songs on her YouTube account. 
+        As of February 2021, her YouTube channel has received over 19 million views in total. Gartland describes her music as folk pop.
+      </p> <!-- Lists can contain paragraph tags to! -->
+    </ul>
+    <h2>SONGS <span class="down">↓</span></h2>
+
+  </div>
+</section>
+<section class="songs">
+
+</section>
+
+<!--
+Add your <ul> or <ul> with quote from your favorite musician below
+-->
+<blockquote>music makin' ginger nutcase.</blockquote>
+
+
+<!--<h2>Photos</h2>-->
+<!--
+If you have time add more photos of your favorite musician.
+-->
+</body>
+</html>
+<!--
+
+Useful documentation if you get lost
+
+File paths and images. How to link to files in folders -> https://www.w3schools.com/html/html_filepaths.asp
+
+Img Tag Documentation - https://www.w3schools.com/tags/tag_img.asp
+
+List tag documentation - https://www.w3schools.com/html/html_lists.asp
+
+-->
