@@ -59,18 +59,24 @@
       position: absolute;
       left: -25px;
       background-color:rgba( 255, 255, 255, 0.5);
+      transition: all 200ms ease-in-out;
+    }
+
+    ul:hover{
+      left: -50px;
+      background-color:rgba( 255, 255, 255, 1);
     }
 
     li{
       list-style-type: none;
     }
 
-    p{
+    .desc{
       margin-top: 25px;
       border-top: 5px solid #4DB8BA;
     }
 
-    li, p{
+    li, .desc{
       width: 50ch;
     }
 
@@ -102,6 +108,9 @@
     blockquote p {
       display: inline;
     }
+    .song-list{
+        margin-left: 50px;
+    }
 
   </style>
 </head>
@@ -131,13 +140,17 @@ Instructions:
       <li>Borned Feb 3, 1995 (25 years old)</li>
       <li>Dublin, Ireland</li>
       <li>Solo</li>
-      <p>
+      <p class="desc">
         An Irish singer-songwriter and guitarist from Dublin who gained popularity from posting cover songs on her YouTube account. 
         As of February 2021, her YouTube channel has received over 19 million views in total. Gartland describes her music as folk pop.
       </p> <!-- Lists can contain paragraph tags to! -->
     </ul>
     <h2>SONGS <span class="down">↓</span></h2>
-
+    <div class="song-list">
+        <p><a href="https://open.spotify.com/track/6b7P9ZrNbF7WNczuIJqJL1?si=3913409de78847e6">I Go Crazy</a></p>
+        <p><a href="https://open.spotify.com/track/2Rj9HWaNkUsxdjM2khuqNd?si=2194f5000c6b44e0">OH GOD</a></p>
+        <p><a href="https://open.spotify.com/track/6b7P9ZrNbF7WNczuIJqJL1?si=3913409de78847e6">Pretending</a></p>
+    </div>
   </div>
 </section>
 <section class="songs">
