@@ -24,9 +24,14 @@
       display: flex;
     }
     
-    .artist-img{
+    .img-box{
       flex: 50%;
-      width: 100vw;
+    }
+
+    .artist-img{
+      width: 100%;
+      min-width: 50px;
+      flex-shrink: 0;
     }
 
     .info-card{
@@ -39,7 +44,7 @@
     h1{
       font-size: 15rem;
       position: absolute;
-      left: 1px;
+      left: -15px;
       top: 0;
       z-index: 5;
       line-height: 10rem;
@@ -137,7 +142,7 @@ Instructions:
 
 -->
 <section class="intro">
-  <img class="artist-img" src="https://m.media-amazon.com/images/I/81GiRCtiJFL._SS500_.jpg" />
+  <div class="img-box"><img class="artist-img" src="https://m.media-amazon.com/images/I/81GiRCtiJFL._SS500_.jpg" /></div>
 
   <h1>Orla Gartland</h1> <!-- Notice how lists can contain other html elements like the <h1> tag. Our list now has a title! -->
   <div class="info-card">
