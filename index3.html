@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="layout-home">
+    <head>
+      <meta charset="utf-8">
+      <title>Cherche Pour Cecile</title>
+      <meta name="description" content="Welcome to Cecilia's resume website. Cecilia enjoy spending her time learning new ways to design and illustrate to make it healing for people to look and interactive with art.">
+      <meta name="author" content="Cecilia Tran">
+      <link rel="icon" href="favicon.ico" />
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+      <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;  user-scalable=0;" name="viewport">
+
+      <!--stylesheets-->
+      <link rel="stylesheet" href="css/styles.css">
+    </head>
+    
+    <body>
+    <!-- Everytime you refresh, the colors on the title changes -->
+    <div class="overlay">
+      <p class="pop-up-text">
+        Hello stranger!
+      </p>
+    </div>
+    <div class="whole-page">
+      <header>
+        <p><strong class="title">CECILIA TRAN</strong></p>
+        <nav>
+          <ul class="nav-links">
+          </ul>
+        </nav>
+      </header>
+      <section class="about" id="about">
+        <h1 class="heading">Hi, my name is <span class="my-name">Cecilia Tran!</span></h1>
+        <p class="sub-heading">A <strong>software engineer</strong> (with a focus on front-end) and <strong>an aspiring ux and ui designer</strong>. I like to design creative solutions for user experiences where tech intersects art. Currently, I am dabbling and learning ReactJS and Three.js. My hobbies include video games, drawing, graphic design, hiking, watching anime and cartoons, knitting and baking. Other interests include animation, computer graphics, and interaction design.</p>
+
+        <div class="about-other">
+            <div class="skill">
+              <p class="title">skills and tools</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS / SASS / Bootstrap</li>
+                <li>Javascript / NodeJS / ReactJS</li>
+                <li>PHP / Drupal</li>
+                <li>MySQL</li>
+                <li>Wireframing / Rapid prototyping</li>
+                <li>AWS: Route 53, Amplify, S3</li>
+                
+                <li>VS Code / Atom
+                <li>Git / JIRA / Confluence</li>
+                <li>Adobe Photoshop / Illustrator</li>
+                <li>Figma / Miro</li>
+              </ul>
+          </div>
+          <div class="work">
+              <p class="title">work!</p>
+              <ul>
+                <li><b class="title">Dreamworks Animation</b><br>Software Engineer - Web Tools<br>Jan 2021 - Current</li>
+                <li><b>Future Motion</b><br>Software Engineer - Web Tools<br>Oct 2020 - Dec 2020</li>
+                <li><b>Expedia Groups: Classic Vacations</b> <br> Web Developer && UI Designer<br>Jan 2019 - Jun 2020</li>
+                <li><b>Aerohive Networks</b> <br> Fullstack Engineer<br>Feb 2018 - Jan 2019</li>
+                <li><b>The Walt Disney Company</b> <br> Web UI Developer Intern<br> June 2017 - Jan 2018</li>
+                <li><b>Ichee - my own freelance</b> <br> Web Developer / Graphic Designer / Illustrator<br>2017 - 2020</li>
+              </ul>
+          </div>
+        </div>  
+      </section>
+      <section id="projects">
+        <h2 class="title">PROJECTS</h2>
+        <div class="projects">
+            <div class="project project-1">
+              <h4>Classic Vacations Website</h4>
+              <img src="https://www.cecitran.me/static/media/proj1-img.b0743d0c.jpg" class="project-img"/>
+              <div class="proj-descp">HTML, CSS, JS, Sketch, Drupal, PHP, JQuery, Bootstrap, React, Photoshop, Git, JIRA, AWS <br><br>
+                A site I worked on with the UX designer to redesign. Includes a style guide site that showcases the current styling for the new and upcoming website look!
+                <a class="project-link" href="#" title="Click to go to style guide site"> Style Guide site</a>
+                <a class="project-link" href="https://www.classicvacations.com/" title="click to visit classic vacation site">Classic Vacations site</a>
+        </div>
+            </div>
+            <div class="project project-2">
+              <h4>NookNet</h4>
+              <img src="https://www.cecitran.me/static/media/proj2-img.280a5f3f.jpg" class="project-img" />
+              <div class="proj-descp">
+                HTML, CSS, JS, Sketch, PHP, JQuery, Bootstrap <br><br>
+                I volunteered to join a team of devs to build a guide site people can come to for Animal Crossing information. I am currently working through some Collections pages that will be item checklists.</div>
+              <a class="project-link" href="https://www.nooknet.net/" title="click to visit Nook net">NookNet site</a>
+              <a class="project-link" href="https://www.behance.net/gallery/101793025/Animal-Crossing-Guide-Collections-Page-Revamp" title="click to visit Nook net">NookNet mockups for Collections</a>
+            </div>
+            <div class="project project-3">
+              <h4>My New Website in React</h4>
+              <img src="https://www.cecitran.me/static/media/proj3-img.13211a31.jpg" class="project-img" />
+              <div class="proj-descp">ReactJS, HTML, CSS, JS, Node, Express, AWS Route 53, Amplify
+                <br><br>I wanted to experiment with ReactJS and started working on this site because of the type of challenges I wanted to take on that my current role didn't provide. I also wanted to play around more with CSS Grids and type.
+                <a class="project-link" href="https://cecitran.me/" title="click to visit Nook net">My new website</a>
+        </div>
+            </div>
+        </div>
+      </section>
+
+      <footer id="contact">
+        <h1>Let's talk more! You can email me <a href="mailTo@cecitran94@gmail.com">here</a></h1>
+        <div class="forms">
+          <h4 class="title">talk to me!</h4>
+          <form id="myForm">
+            <input type="text" name="full-name" class="full-name" placeholder="Your name" autocomplete='off' />
+            <input type="email" name="full-name" class="email" placeholder="Your email" autocomplete='off' />
+            <textarea rows=5 name="message" class="message" placeholder="Your message"></textarea>
+
+            <button class="submit submitBtn"><div class="line"></div><p class="not-sbt">Submit email</p><p class="sbt">Email sent!</p></button>
+
+          </form>
+        </div>
+        <h4 class="title">social media</h4>
+        <ul class="social-media">
+          <li><a href="https://www.github.com/Ceciceciceci/" target="_blank">github</a></li>
+          <li><a href="https://codepen.io/ichiknees/pens/public" target="_blank">codepen</a></li>
+          <li><a href="https://www.linkedin.com/in/ceciliaaa-tran" target="_blank">linkedin</a></li>
+          <li><a href="https://www.behance.net/cecitran94fab0" target="_blank">behance</a></li>
+          <li><a href="https://www.twitter.com/ichi_nese" target="_blank">twitter</a></li>
+        </ul>
+      </footer>
+    </div>  
+
+    <!--javascript-->
+    <script src="js/index.js"></script>
+  </body>
+</html>
