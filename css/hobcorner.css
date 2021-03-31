@@ -76,14 +76,14 @@ section{
 }
 
 .jumbotron.artBackground{
-  background-image: url('/Users/cecitran/Desktop/Bootstrap_Customize/Solved/images/image7.png');
+  background-image: url('../images/image7.png');
   background-size: cover;
   height: 100vh;
   border-radius: 0;
 }
 
 .jumbotron.drawBackground{
-  background-image: url('/Users/cecitran/Desktop/Bootstrap_Customize/Solved/images/image8.png');
+  background-image: url('../images/image8.png');
   background-size: cover;
   height: 100vh;
   border-radius: 0;
