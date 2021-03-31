@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700;800;900&display=swap');
+
+:root{
+  --fredoka : 'Fredoka One', sans-serif;
+  --poppins : 'Poppins', sans-serif;
+
+  --yellow: #FFBB17;
+  --purple: #B795C2;
+
+  --large: 72px;
+}
+
+
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body{
+  background-color: white;
+  overflow-x: hidden;
+}
+/* Text */
+h1, h2, h3 , h4, h5, h6 {
+  font-family: var(--fredoka);
+}
+
+h1{
+  font-size: var(--large);
+}
+p {
+  font-family: var(--poppins);
+}
+hr{
+  margin-top: 50px;
+}
+
+section{
+  padding: 0 100px !important;
+}
+
+.content{
+  margin-bottom: 150px;
+}
+
+/* Navigation bar */
+.navbar{
+  padding-left:0;
+}
+
+.navbar a{
+  color: white;
+  font-family: var(--poppins);
+}
+
+/* General */
+.customNav {
+  position: fixed;
+  width: 100%;
+  background-color: transparent !important;
+  background-size: cover;
+  z-index: 10;
+  padding: 15px 100px;
+}
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 0 !important;
+}
+
+.navbar-brand span{
+}
+.nav-item {
+  margin: 0px 15px;
+}
+
+.jumbotron.artBackground{
+  background-image: url('/Users/cecitran/Desktop/Bootstrap_Customize/Solved/images/image7.png');
+  background-size: cover;
+  height: 100vh;
+  border-radius: 0;
+}
+
+.jumbotron.drawBackground{
+  background-image: url('/Users/cecitran/Desktop/Bootstrap_Customize/Solved/images/image8.png');
+  background-size: cover;
+  height: 100vh;
+  border-radius: 0;
+}
+
+.jumbotron{
+  margin-bottom: 200px;
+}
+
+.artBackground .jumboCopy{
+  display: flex;
+  height: 100vh;
+  flex-direction:column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.drawBackground .jumboCopy{
+  margin-left: 50px;
+  display: flex;
+  height: 100vh;
+  flex-direction:column;
+  justify-content: center;
+}
+
+
+.lead{
+  font-family: var(--poppins);
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.lead button {
+  background-color: var(--yellow);
+  transition: all 200ms ease-in-out;
+}
+
+.lead button:hover{
+  background-color: #ff8d00;
+  transform: scale(1.1);
+}
+
+.subtext{
+  margin-bottom: 100px;
+}
+
+.btn{
+  font-family: var(--fredoka);
+  color: white;
+  letter-spacing: 2px;
+  padding: 25px inherit !important;
+}
+
+.btn-large{
+  background-color: var(--yellow);
+  font-size: 36px;
+  padding: 10px 100px;
+}
+
+.draw {
+  margin-bottom: 150px;
+}
+.draw .btn{
+  background-color: var(--yellow);
+}
+
+.draw h1{
+  color: var(--yellow);
+}
+
+.knit h1{
+  color: var(--purple);
+}
+
+.knit .btn{
+  background-color: var(--purple);
+}
+
+.learn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.numbers{
+  border-right: 1px solid black;
+  font-family: var(--poppins);
+  text-align: center;
+}
+.numbers li{
+  color: var(--yellow);
+  font-weight: bold;
+}
+
+.row li{
+  padding: 25px 0;
+  list-style-type: none;
+}
+
+.list-info{
+  padding-left: 35px;
+  font-family: var(--poppins);
+}
+
+.more-info{
+  margin-top: 50px;
+}
