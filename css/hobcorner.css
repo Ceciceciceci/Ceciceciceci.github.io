@@ -89,6 +89,14 @@ section{
   border-radius: 0;
 }
 
+.jumbotron.knitBackground{
+  background-image: url('../images/image9.png');
+  background-size: cover;
+  height: 100vh;
+  border-radius: 0;
+}
+
+
 .jumbotron{
   margin-bottom: 200px;
 }
@@ -101,7 +109,7 @@ section{
   align-items: center;
 }
 
-.drawBackground .jumboCopy{
+.drawBackground .jumboCopy, .knitBackground .jumboCopy{
   margin-left: 50px;
   display: flex;
   height: 100vh;
@@ -121,7 +129,6 @@ section{
   background-color: var(--yellow);
   transition: all 200ms ease-in-out;
 }
-
 .lead button:hover{
   background-color: #ff8d00;
   transform: scale(1.1);
@@ -138,11 +145,18 @@ section{
   padding: 25px inherit !important;
 }
 
-.btn-large{
+.drawBackground .btn-large{
   background-color: var(--yellow);
   font-size: 36px;
   padding: 10px 100px;
 }
+
+.knitBackground .btn-large {
+  background-color: var(--purple) !important;
+  font-size: 36px;
+  padding: 10px 100px;
+}
+
 
 .draw {
   margin-bottom: 150px;
@@ -189,5 +203,10 @@ section{
 }
 
 .more-info{
+  margin-top: 50px;
+}
+
+
+.row-heading{
   margin-top: 50px;
 }
